@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void print_quad(int);
+// void print_quadvaz(int);
+// void print_triangulo(int);
+void print_linha(int);
+
+int main(void)
+{
+
+    int n;
+    scanf("%d", &n);
+
+
+    print_quad(n);
+    // print_quadvaz(n);
+    // print_triangulo(n);
+
+    return 0;
+}
+
+void print_quad(int num)
+{
+    int i;
+    for (i = 0; i < num; i++)
+    {
+        print_linha(num);
+    }
+    printf("\n");
+
+    return;
+}
+
+void print_linha(int n)
+{
+    int i;
+    for (i = 0; i < n; i++)
+    {
+        printf("*");
+    }
+    printf("\n");
+
+    return;
+}
