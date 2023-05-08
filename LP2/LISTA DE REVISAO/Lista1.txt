@@ -1,0 +1,232 @@
+1.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/*Monte um algoritmo/programa em c para ler o NOME e o TELEFONE de uma pessoa
+qualquer. Ao final imprima os dados lidos.*/
+
+int main(){
+
+int telefone;
+char nome[50];
+
+printf("Digite seu nome: ");
+scanf("%s",nome);
+
+
+printf("Digite seu telefone: ");
+scanf("%d",&telefone);
+
+
+//impressao
+
+printf("Seu nome: %s \n",nome);
+printf("Seu telefone: %d ", telefone);
+
+
+    return 0;
+}
+
+
+2.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/*Fa a um algoritmo/programa em c para ler 3 NOTAS de um aluno qualquer e imprimir a
+m dia aritm tica.*/
+
+int main()
+{
+
+    float nota1, nota2, nota3,media;
+
+    printf("Digite a primeira nota: ");
+    scanf("%f", &nota1);
+
+    printf("Digite a segunda nota: ");
+    scanf("%f", &nota2);
+
+    printf("Digite a terceira nota: ");
+    scanf("%f", &nota3);
+
+    media = (nota1+nota2+nota3) / 3;
+
+    
+    printf("Sua media e: %2.f ", media);
+
+    return 0;
+}
+
+
+
+
+3.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/*Elabore um algoritmo/programa em c para ler um NÚMERO inteiro qualquer e imprimir seu
+DOBRO, seu TRIPLO, sua METADE e o TRIPLO DE SUA METADE.*/
+
+int main(){
+
+    int numero,aux1,aux2,aux3,aux4;
+
+    printf("Digite um numero: ");
+    scanf("%d",&numero);
+
+
+    aux1=numero*2;
+    aux2=numero*3;
+    aux3=numero/2;
+    aux4=aux3*3;
+
+
+
+printf("Dobro: %d \n",aux1);
+printf("Triplo: %d \n",aux2);
+printf("Metade: %d \n",aux3);
+printf("Triplo de sua metade: %d",aux4);
+
+
+    return 0;
+}
+
+4. Não sei se está completamente correto
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+/*Escreva um programa que leia o raio de um círculo e imprima seu diâmetro, o valor de sua
+circunferência e sua área.*/
+
+int main(){
+
+float raio, pi=3.14, area;
+	
+	printf("Informe o RAIO: "); 
+	scanf("%f", &raio);
+	
+ //diametro
+ raio=raio*2;
+ 
+ //circunferencia
+ area = pi * raio * raio;
+ 
+ //area
+ pi*pow(raio,2);
+	
+	return 0;
+}
+
+
+5.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(){
+
+int valor,n5,n2,n10,n1;
+
+printf("Digite um valor ");
+scanf("%d", &valor);   
+ 
+	n5 = valor / 50;
+	valor = valor - (n5 * 50);
+ 
+	n2 = valor / 20;
+	valor = valor - (n2 * 20);
+ 
+	n10 = valor / 10;
+	valor = valor - (n10 * 10);
+ 
+ 
+	n1 = valor / 1;
+	valor = valor - (n1 * 1);
+ 
+	printf("\nO número de notas de 50 e: %d", n5);
+	printf("\nO número de notas de 20 e: %d", n2);
+	printf("\nO número de notas de 10 e: %d", n10);
+	printf("\nO número de notas de 1 e: %d", n1);
+
+    return 0;
+}
+
+
+
+
+14. falta colocar o menor numero
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int numero[11],contador,maior;
+
+    for(contador=0; contador<10; contador++)
+    {
+
+        printf("Digite um numero: ");
+        scanf("%d",&numero[contador]);
+    }
+
+    maior= numero[0];
+
+    for(contador=0; contador<10; contador++)
+    {
+
+        if (numero[contador]>maior)
+        {
+
+            maior=numero[contador];
+        }
+
+    }
+
+    printf("/n");
+    printf("O maior numero e: %d ",maior);
+
+    return 0;
+}
+
